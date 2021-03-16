@@ -1,0 +1,12 @@
+{
+  "name": "configure-pulumi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:opronto/configure-pulumi.git",
+  "author": "Gudleik Rasch <gudleik@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "aws-sdk": "^2.864.0"
+  }
+}
