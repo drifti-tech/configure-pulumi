@@ -20,6 +20,8 @@ async function main() {
     })
   )
 
+  if (configs.length === 0) throw new Error(`No image tags found for ref ${revision}`)
+
   const config = configs.map((c) => `--plaintext ${c}`).join(' ')
   core.info(`Configuration params: ${config}`)
   core.setOutput('config', config)
