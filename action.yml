@@ -2,7 +2,7 @@ name: Configure pulumi
 description: Configure pulumi
 runs:
   using: node16
-  main: index.js
+  main: dist/index.js
 inputs:
   revision:
     description: git revision
