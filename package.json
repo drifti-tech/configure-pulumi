@@ -1,12 +1,18 @@
 {
   "name": "configure-pulumi",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:opronto/configure-pulumi.git",
+  "main": "dist/index.js",
+  "repository": "git@github.com:drifti-tech/configure-pulumi.git",
   "author": "Gudleik Rasch <gudleik@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
     "aws-sdk": "^2.864.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.33.3"
+  },
+  "scripts": {
+    "build": "ncc build index.js -o dist --minify"
   }
 }

@@ -1,12 +1,9 @@
 name: Configure pulumi
 description: Configure pulumi
 runs:
-  using: node12
+  using: node16
   main: index.js
 inputs:
-  stackName:
-    description: name of pulumi stack to configure
-    required: true
   revision:
     description: git revision
     required: true
