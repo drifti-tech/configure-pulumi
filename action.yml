@@ -9,7 +9,7 @@ inputs:
     required: true
   bucket:
     description: name of s3 bucket where image tag names are stored
-    default: pronto-build
+    default: drifti-build
     required: false
 outputs:
   config:
